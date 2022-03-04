@@ -1,5 +1,35 @@
 # CLEVR-Robot Environment
 
+## This is a fork of [the clevr_robot_env github repo](https://github.com/google-research/clevr_robot_env).
+
+### Setup.py to install or develop
+
+You can now easilly install this repo and its dependency:
+
+#### MUJOCO
+Mujoco has been acquired by DeepMind and is now freely available.
+You need to be able to install `mujoco_py >= 2.1`
+
+### INSTALL
+```
+git clone https://github.com/k4ntz/clevr_robot_env
+cd clevr_robot_env
+bash install_mujoco.bash  # Will install mujoco2.1 in ~/.mujoco
+pip3 install -r requirements.txt
+python3 setup.py develop --user
+```
+
+### Usage
+
+```
+python3 clevr_test.py
+```
+To observe a random agent interacting with the environment.
+![rl scores](scene_example.png)
+
+I have quickly fixed the original rendering that now uses matplotlib to render.
+
+# Original README
 ## Overview
 
 The CLEVR-Robot environment is a reinforcement learning environment that aims to

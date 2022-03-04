@@ -1,5 +1,6 @@
-gym
+mujoco_py>=2.1
 dm_control
+gym
 numpy
 opencv-python
-mujoco_py
+matplotlib
