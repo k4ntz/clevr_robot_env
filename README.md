@@ -25,7 +25,9 @@ python3 setup.py develop --user
 python3 clevr_test.py
 ```
 To observe a random agent interacting with the environment.
+
 ![rl scores](scene_example.png)
+
 
 I have quickly fixed the original rendering that now uses matplotlib to render.
 
