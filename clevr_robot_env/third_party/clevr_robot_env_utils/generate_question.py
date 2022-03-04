@@ -18,11 +18,7 @@ import os
 import random
 import re
 import time
-
-try:
-  import third_party.clevr_robot_env_utils.question_engine as qeng
-except ImportError as e:
-  print(e)
+import clevr_robot_env.third_party.clevr_robot_env_utils.question_engine as qeng
 
 
 parent_dir = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))

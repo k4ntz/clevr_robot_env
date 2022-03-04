@@ -1,0 +1,5 @@
+gym
+dm_control
+numpy
+opencv-python
+mujoco_py

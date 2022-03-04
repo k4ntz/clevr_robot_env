@@ -26,7 +26,7 @@ import gym
 from gym import spaces
 from gym.utils import seeding
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 class MujocoEnv(gym.Env):
   """Custom Mujoco environment that uses dm control's wrapper."""
@@ -113,7 +113,11 @@ class MujocoEnv(gym.Env):
       data = self.camera.render()
       return np.copy(data)  # render reuses the same memory space.
     elif mode == 'human':
-      raise NotImplementedError('Interactive rendering not implemented yet.')
+      plt.clf()
+      plt.imshow(self.camera.render())
+      plt.pause(0.1)
+
+      # raise NotImplementedError('Interactive rendering not implemented yet.')
 
   def get_body_com(self, body_name):
     idx = self.physics.model.name2id(body_name, 1)

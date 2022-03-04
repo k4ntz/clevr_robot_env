@@ -15,4 +15,4 @@
 
 """Init module for the CLEVR-Robot environment."""
 
-from clevr_robot_env.env import *
+from .env import *
